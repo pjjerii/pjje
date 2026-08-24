@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Pelajaran XI TKJ 3</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 15px 8px;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #dce9ff, #f5f8ff);
+            color: #222;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.92);
+            padding: 15px 10px;
+            border-radius: 18px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+
+        .back-button {
+            display: block;
+            width: fit-content;
+            margin: 0 auto 15px;
+            padding: 9px 16px;
+            background: rgba(255, 255, 255, 0.55);
+            border: 1px solid rgba(255,255,255,0.8);
+            border-radius: 12px;
+            color: #31558f;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: bold;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .back-button:active {
+            transform: scale(0.97);
+        }
+
+        h1 {
+            text-align: center;
+            margin: 0;
+            font-size: 18px;
+            font-weight: 800;
+            line-height: 1.3;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 6px 0 18px;
+            font-size: 14px;
+        }
+
+        .table-wrapper {
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+            text-align: center;
+            font-size: 10px;
+        }
+
+        th,
+        td {
+            border: 1px solid #aaa;
+            padding: 7px 3px;
+            word-wrap: break-word;
+        }
+
+        th {
+            background: #9db9eb;
+            font-weight: bold;
+        }
+
+        th:first-child,
+        td:first-child {
+            width: 27%;
+        }
+
+        th:nth-child(2),
+        td:nth-child(2) {
+            width: 24%;
+        }
+
+        th:nth-child(3),
+        td:nth-child(3) {
+            width: 24.5%;
+        }
+
+        th:nth-child(4),
+        td:nth-child(4) {
+            width: 24.5%;
+        }
+
+        .istirahat,
+        .pembiasaan {
+            background: #b8cbed;
+            font-weight: bold;
+        }
+
+        .hari-jumat {
+            margin-top: 20px;
+        }
+
+        .hari-jumat table {
+            width: 100%;
+            table-layout: fixed;
+        }
+
+        .hari-jumat th:first-child,
+        .hari-jumat td:first-child {
+            width: 27%;
+        }
+
+        .hari-jumat th:nth-child(2),
+        .hari-jumat td:nth-child(2) {
+            width: 24%;
+        }
+
+        .hari-jumat th:nth-child(3),
+        .hari-jumat td:nth-child(3) {
+            width: 49%;
+        }
+
+        .hari-jumat th {
+            background: #9db9eb;
+        }
+
+        @media (max-width: 380px) {
+            body {
+                padding: 10px 5px;
+            }
+
+            .container {
+                padding: 12px 7px;
+                border-radius: 15px;
+            }
+
+            h1 {
+                font-size: 16px;
+            }
+
+            h2 {
+                font-size: 13px;
+            }
+
+            table {
+                font-size: 9px;
+            }
+
+            th,
+            td {
+                padding: 6px 2px;
+            }
+
+            .back-button {
+                font-size: 12px;
+                padding: 8px 13px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <a href="index.html" class="back-button">Kembal</a>
+
+    <h1>JADWAL PELAJARAN SEMESTER GANJIL KELAS XI TKJ 3</h1>
+    <h2>TAHUN PELAJARAN 2026/2027</h2>
+
+    <!-- SENIN - KAMIS -->
+    <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th>WAKTU</th>
+                    <th>SENIN</th>
+                    <th>SELASA</th>
+                    <th>RABU</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>07.00-07.15</td>
+                    <td colspan="3" class="pembiasaan">PEMBIASAAN</td>
+                </tr>
+
+                <tr>
+                    <td>07.15-08.00</td>
+                    <td>UPACARA BENDERA</td>
+                    <td>BAHASA DAERAH</td>
+                    <td>PJOK</td>
+                </tr>
+
+                <tr>
+                    <td>08.00-08.45</td>
+                    <td>KK.K</td>
+                    <td>KK.K</td>
+                    <td>PJOK</td>
+                </tr>
+
+                <tr>
+                    <td>08.45-09.30</td>
+                    <td>KK.K</td>
+                    <td>KK.K</td>
+                    <td>PJOK</td>
+                </tr>
+
+                <tr>
+                    <td>09.30-09.45</td>
+                    <td colspan="3" class="istirahat">ISTIRAHAT</td>
+                </tr>
+
+                <tr>
+                    <td>09.45-10.30</td>
+                    <td>KK.K</td>
+                    <td>KK.K</td>
+                    <td>SEJARAH</td>
+                </tr>
+
+                <tr>
+                    <td>10.30-11.15</td>
+                    <td>KK.K</td>
+                    <td>KK.K</td>
+                    <td>SEJARAH</td>
+                </tr>
+
+                <tr>
+                    <td>11.15-12.00</td>
+                    <td>KK.K</td>
+                    <td>KK.K</td>
+                    <td>KIK</td>
+                </tr>
+
+                <tr>
+                    <td>12.00-12.30</td>
+                    <td colspan="3" class="istirahat">ISTIRAHAT</td>
+                </tr>
+
+                <tr>
+                    <td>12.30-13.15</td>
+                    <td>KK.K</td>
+                    <td>KK.K</td>
+                    <td>KIK</td>
+                </tr>
+
+                <tr>
+                    <td>13.15-14.00</td>
+                    <td>KK.K</td>
+                    <td>KK.K</td>
+                    <td>PAI &amp; BP</td>
+                </tr>
+
+                <tr>
+                    <td>14.00-14.45</td>
+                    <td>KK.K</td>
+                    <td>KK.K</td>
+                    <td>PAI &amp; BP</td>
+                </tr>
+
+                <tr>
+                    <td>14.45-15.30</td>
+                    <td>KK.K</td>
+                    <td>KK.K</td>
+                    <td>PAI &amp; BP</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <!-- KAMIS -->
+    <div class="hari-jumat">
+        <table>
+            <thead>
+                <tr>
+                    <th>WAKTU</th>
+                    <th>KAMIS</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>07.15-08.00</td>
+                    <td>BAHASA INDONESIA</td>
+                </tr>
+
+                <tr>
+                    <td>08.00-08.45</td>
+                    <td>BAHASA INDONESIA</td>
+                </tr>
+
+                <tr>
+                    <td>08.45-09.30</td>
+                    <td>BAHASA INDONESIA</td>
+                </tr>
+
+                <tr>
+                    <td>09.30-09.45</td>
+                    <td class="istirahat">ISTIRAHAT</td>
+                </tr>
+
+                <tr>
+                    <td>09.45-10.30</td>
+                    <td>MAPEL PILIHAN</td>
+                </tr>
+
+                <tr>
+                    <td>10.30-11.15</td>
+                    <td>MAPEL PILIHAN</td>
+                </tr>
+
+                <tr>
+                    <td>11.15-12.00</td>
+                    <td>BAHASA DAERAH</td>
+                </tr>
+
+                <tr>
+                    <td>12.00-12.30</td>
+                    <td class="istirahat">ISTIRAHAT</td>
+                </tr>
+
+                <tr>
+                    <td>12.30-13.15</td>
+                    <td>PENDIDIKAN PANCASILA</td>
+                </tr>
+
+                <tr>
+                    <td>13.15-14.00</td>
+                    <td>PENDIDIKAN PANCASILA</td>
+                </tr>
+
+                <tr>
+                    <td>14.00-14.45</td>
+                    <td>KODING &amp; AI</td>
+                </tr>
+
+                <tr>
+                    <td>14.45-15.30</td>
+                    <td>KODING &amp; AI</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <!-- JUMAT -->
+    <div class="hari-jumat">
+        <table>
+            <thead>
+                <tr>
+                    <th>WAKTU</th>
+                    <th>JUMAT</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>07.00-07.45</td>
+                    <td>LITERASI AL-QUR'AN</td>
+                </tr>
+
+                <tr>
+                    <td>07.45-08.30</td>
+                    <td>KIK</td>
+                </tr>
+
+                <tr>
+                    <td>08.30-09.15</td>
+                    <td>KIK</td>
+                </tr>
+
+                <tr>
+                    <td>09.15-10.00</td>
+                    <td>MATEMATIKA</td>
+                </tr>
+
+                <tr>
+                    <td>10.00-10.15</td>
+                    <td class="istirahat">ISTIRAHAT</td>
+                </tr>
+
+                <tr>
+                    <td>10.15-11.00</td>
+                    <td>MATEMATIKA</td>
+                </tr>
+
+                <tr>
+                    <td>11.00-11.45</td>
+                    <td>MATEMATIKA</td>
+                </tr>
+
+                <tr>
+                    <td>11.45-13.00</td>
+                    <td class="istirahat">ISTIRAHAT</td>
+                </tr>
+
+                <tr>
+                    <td>13.00-13.45</td>
+                    <td>BAHASA INGGRIS</td>
+                </tr>
+
+                <tr>
+                    <td>13.45-14.30</td>
+                    <td>BAHASA INGGRIS</td>
+                </tr>
+
+                <tr>
+                    <td>14.30-15.15</td>
+                    <td>BAHASA INGGRIS</td>
+                </tr>
+
+                <tr>
+                    <td>15.15-16.00</td>
+                    <td>BAHASA INGGRIS</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+</body>
+</html>
