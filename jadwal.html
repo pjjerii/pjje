@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Pelajaran</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 25px 15px;
+            font-family: Arial, sans-serif;
+            color: #243447;
+
+            background:
+                radial-gradient(circle at 20% 20%, #b8eaff, transparent 35%),
+                radial-gradient(circle at 80% 80%, #c8d8ff, transparent 35%),
+                linear-gradient(135deg, #c2efff, #dce7ff);
+
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 30px 20px;
+
+            border-radius: 30px;
+
+            background: rgba(255, 255, 255, 0.6078431372549019);
+            border: 1px solid rgba(255, 255, 255, 0.7);
+
+            box-shadow: 0 20px 45px rgba(60, 120, 180, 0.15);
+
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+        }
+
+        /* JUDUL */
+
+        .judul {
+            text-align: center;
+            margin-bottom: 28px;
+        }
+
+        .judul h1 {
+            margin: 0;
+            font-size: 30px;
+        }
+
+        .judul p {
+            margin: 8px 0 0;
+            font-size: 14px;
+            color: #687789;
+        }
+
+        /* JADWAL */
+
+        .jadwal {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+        }
+
+        /* KOTAK HARI */
+
+        .hari {
+            height: 350px;
+            padding: 18px;
+
+            border-radius: 24px;
+
+            background: rgba(255, 255, 255, 0.9019607843137255);
+            border: 1px solid rgba(255, 255, 255, 0.8);
+
+            box-shadow:
+                0 8px 25px rgba(60, 100, 140, 0.12),
+                inset 0 1px 2px rgba(255, 255, 255, 0.7);
+
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+
+            overflow: hidden;
+        }
+
+        .hari h2 {
+            margin: 0 0 15px;
+
+            text-align: center;
+            font-size: 21px;
+        }
+
+        /* MAPEL */
+
+        .mapel {
+            min-height: 48px;
+            margin-bottom: 9px;
+            padding: 10px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 14px;
+
+            background: rgba(29, 141, 255, 0.3058823529411765);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+
+            box-shadow:
+                0 4px 12px rgba(50, 60, 70, 0.08),
+                inset 0 1px 2px rgba(255, 255, 255, 0.35);
+
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* JUMAT TENGAH */
+
+        .jumat {
+            grid-column: 1 / 3;
+            width: 50%;
+            justify-self: center;
+        }
+
+        /* TOMBOL */
+
+        .kembali {
+            text-align: center;
+            margin-top: 28px;
+        }
+
+        .kembali a {
+            display: inline-block;
+
+            padding: 12px 28px;
+
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+
+            border-radius: 17px;
+
+            background: linear-gradient(135deg, #159fe8, #5865e8);
+
+            box-shadow: 0 8px 18px rgba(50, 120, 220, 0.25);
+        }
+
+        /* HP */
+
+        @media (max-width: 650px) {
+
+            body {
+                padding: 15px 10px;
+            }
+
+            .container {
+                padding: 25px 12px;
+            }
+
+            .jadwal {
+                gap: 12px;
+            }
+
+            .hari {
+                height: 350px;
+                padding: 13px;
+            }
+
+            .hari h2 {
+                font-size: 18px;
+            }
+
+            .mapel {
+                min-height: 45px;
+                padding: 7px;
+                font-size: 12px;
+            }
+
+            .jumat {
+                width: 50%;
+            }
+        }
+
+        @media (max-width: 400px) {
+
+            .hari {
+                height: 330px;
+            }
+
+            .mapel {
+                min-height: 40px;
+                font-size: 11px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="judul">
+            <h1>Jadwal Pelajaran</h1>
+            <p>Kelas XI TKJ 3</p>
+        </div>
+
+        <div class="jadwal">
+
+            <div class="hari">
+                <h2>Senin</h2>
+                <div class="mapel">KK.K</div>
+            </div>
+
+            <div class="hari">
+                <h2>Selasa</h2>
+                <div class="mapel">Bahasa Daerah</div>
+                <div class="mapel">KK.K</div>
+            </div>
+
+            <div class="hari">
+                <h2>Rabu</h2>
+                <div class="mapel">PJOK</div>
+                <div class="mapel">Sejarah</div>
+                <div class="mapel">KIK</div>
+                <div class="mapel">PAI &amp; BP</div>
+            </div>
+
+            <div class="hari">
+                <h2>Kamis</h2>
+                <div class="mapel">Bahasa Indonesia</div>
+                <div class="mapel">Mapel Pilihan</div>
+                <div class="mapel">Bahasa Daerah</div>
+                <div class="mapel">Pendidikan Pancasila</div>
+                <div class="mapel">Koding &amp; AI</div>
+            </div>
+
+            <div class="hari jumat">
+                <h2>Jumat</h2>
+                <div class="mapel">KIK</div>
+                <div class="mapel">Matematika</div>
+                <div class="mapel">Bahasa Inggris</div>
+            </div>
+
+        </div>
+
+        <div class="kembali">
+            <a href="index.html">← Kembali</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
